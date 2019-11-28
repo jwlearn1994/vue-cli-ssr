@@ -2,8 +2,8 @@
 module.exports = {
   pluginOptions: {
     ssr: {
-      defaultTitle: 'Vue-Cli SSR',
-      port: 8081,
+      defaultTitle: '{{name}}',
+      port: '{{port}}',
     }
   }
 }
