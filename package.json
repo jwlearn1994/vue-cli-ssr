@@ -1,19 +1,25 @@
 {
-  "name": "vue-ssr",
+  "name": "vue-template-ssr",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "ssr:build": "vue-cli-service ssr:build",
+    "ssr:serve": "vue-cli-service ssr:serve",
+    "ssr:start": "cross-env NODE_ENV=production vue-cli-service ssr:serve --mode production"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "core-js": "^3.4.3",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
+    "vue-server-renderer": "^2.6.0",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
+    "@akryum/vue-cli-plugin-ssr": "^0.6.0",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
     "@vue/cli-plugin-router": "^4.1.0",
